@@ -14,7 +14,7 @@ application.use(morgan('common'))
 application.use(helmet())
 UserRoutes.routes(application)
 
-application.use(express.static(path.join("ehandeljsf/build")))
+application.use(express.static(path.join("ehandeljsf/build/index.html")))
 
 application.use(Middlewares.notFound)
 Configurations.connectToPort(application)

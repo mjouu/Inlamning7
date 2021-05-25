@@ -7,7 +7,7 @@ const { PORT,
     PROD_DATABASE_URL,
     ENVIRONMENT } = process.env */
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3001
 
 const connectToPort = async (application) => {
 
@@ -23,7 +23,8 @@ const connectToPort = async (application) => {
 const connectToDatabase = async () => {
     /* const DATABASE_URL = ENVIRONMENT === 'DEVELOPMENT' ? DEV_DATABASE_URL : PROD_DATABASE_URL */
     try {
-        await mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/ehandeljsf",
+        await mongoose.connect(
+            process.env.MONGODB_URI || "mongodb://localhost:27017/ehandeljsf",
             { 
                 useNewUrlParser: true, 
                 useUnifiedTopology: true,
