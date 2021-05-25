@@ -7,9 +7,10 @@ const { PORT,
     PROD_DATABASE_URL,
     ENVIRONMENT } = process.env */
 
+const PORT = process.env.PORT || 3001
+
 const connectToPort = async (application) => {
 
-    const PORT = process.env.PORT || 3001
     try {
         await application.listen(PORT, () => {
             console.log(`✔️ SERVER IS RUNNING ON PORT: ${PORT}`)
