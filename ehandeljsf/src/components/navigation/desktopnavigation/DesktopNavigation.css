@@ -1,0 +1,42 @@
+
+.desktopNavigationWrapper {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    background-color: beige;
+}
+
+.navLogo {
+    width: 130px;
+    height: 100px;
+    cursor: pointer;
+    justify-self: center;
+    align-self: center;
+}
+
+.galleryButton,
+.newsButton,
+.shopButton,
+.signInButton,
+.authUserNavigation {
+    cursor: pointer;
+    padding: 10%;
+    text-transform: uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-self: center;
+    align-self: center;
+}
+
+.signInButton {
+    grid-column: 19/20;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.authUserNavigation {
+    grid-column: 19/20;
+}
+
+.galleryButton {
+    grid-column: 9/9;
+}
