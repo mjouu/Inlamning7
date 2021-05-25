@@ -6,8 +6,11 @@
   "type": "module",
   "scripts": {
     "test": "mocha 'tests/**'",
-    "build-ehandeljsf": "cd ../ehandeljsf && npm run build",
-	  "install-ehandeljsf": "cd ../ehandeljsf && npm install"
+    "start": "node Server.js",
+    "dev": "nodemon Server.js",
+    "install-ehandeljsf": "cd ehandeljsf && npm install",
+    "build-ehandeljsf": "cd ehandeljsf && npm run build",
+    "heroku-postbuild": "npm run install ehandeljsf && npm run build"
   },
   "keywords": [
     "RestAPI"
