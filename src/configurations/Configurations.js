@@ -7,7 +7,7 @@ const { PORT,
     PROD_DATABASE_URL,
     ENVIRONMENT } = process.env */
 
-const PORT = process.env.PORT || 3001
+const PORT = process.env.PORT || 3000
 
 const connectToPort = async (application) => {
 
