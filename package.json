@@ -8,6 +8,7 @@
     "test": "mocha 'tests/**'",
     "start": "node Server.js",
     "dev": "nodemon Server.js",
+    "deploy": "git push heroku master",
     "install-ehandeljsf": "cd ehandeljsf && npm install",
     "build-ehandeljsf": "cd ehandeljsf && npm run build",
     "heroku-postbuild": "npm run install ehandeljsf && npm run build"
@@ -30,6 +31,7 @@
     "chai": "^4.3.4",
     "chai-http": "^4.3.0",
     "eslint": "^7.25.0",
+    "gh-pages": "^3.2.0",
     "mocha": "^8.4.0",
     "nodemon": "^2.0.7"
   }
